@@ -149,7 +149,7 @@
         </a>
     </li>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method public">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method public">
         <a href="#method_getVariables" title="getVariables :: Returns array of all variables in template.">
             <span class="description">Returns array of all variables in template.</span><pre>getVariables</pre>
         </a>
@@ -179,7 +179,7 @@
         </a>
     </li>
 
-                                                                                                        </ul>
+                                                                                                                                                                                                                        </ul>
         </li>
         <li class="nav-header protected">» Protected
             <ul>
@@ -219,6 +219,11 @@
                             </a>
                         </li>
                                                                                 <li class="method protected">
+                            <a href="#method_getMainPartName" title="getMainPartName :: ">
+                                <span class="description"></span><pre>getMainPartName</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
                             <a href="#method_getSlice" title="getSlice :: Get a slice of a string.">
                                 <span class="description">Get a slice of a string.</span><pre>getSlice</pre>
                             </a>
@@ -233,11 +238,21 @@
                                 <span class="description">Find and replace macros in the given XML section.</span><pre>setValueForPart</pre>
                             </a>
                         </li>
+                                                                                <li class="method protected">
+                            <a href="#method_transformSingleXml" title="transformSingleXml :: ">
+                                <span class="description"></span><pre>transformSingleXml</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method_transformXml" title="transformXml :: ">
+                                <span class="description"></span><pre>transformXml</pre>
+                            </a>
+                        </li>
                                                 </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -332,7 +347,7 @@
                                             <a id="method_applyXslStyleSheet"></a>
                         <div class="element clickable method public  method_applyXslStyleSheet" data-toggle="collapse" data-target=".method_applyXslStyleSheet .collapse">
                             <h2>Applies XSL style sheet to template&#039;s parts.</h2>
-                            <pre>applyXslStyleSheet(\DOMDocument $xslDOMDocument, array $xslOptions = array(), string $xslOptionsURI = &#039;&#039;) : void</pre>
+                            <pre>applyXslStyleSheet(\DOMDocument $xslDomDocument, array $xslOptions = array(), string $xslOptionsUri = &#039;&#039;) : void</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -356,7 +371,7 @@ make sure that output is correctly escaped. Otherwise you may get broken documen
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>$xslDOMDocument</h4>
+                                                <h4>$xslDomDocument</h4>
                                                 <code>\DOMDocument</code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
@@ -364,7 +379,7 @@ make sure that output is correctly escaped. Otherwise you may get broken documen
                                                 <code>array</code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
-                                                <h4>$xslOptionsURI</h4>
+                                                <h4>$xslOptionsUri</h4>
                                                 <code>string</code><p></p>
                                             </div>
                                                                             
@@ -600,15 +615,6 @@ make sure that output is correctly escaped. Otherwise you may get broken documen
                                     <div class="long_description"><p>Macros, while being edited, could be implicitly broken by some of the word processors.</p></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    since
-                                                </th>
-                                                <td>
-                                                                                                                                                                        0.13.0
-                                                                                                                                                                        
-                                                                                                    </td>
-                                            </tr>
                                                                                                                     </table>
 
                                                                             <h3>Arguments</h3>
@@ -671,6 +677,35 @@ make sure that output is correctly escaped. Otherwise you may get broken documen
                                                 <code>integer</code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getMainPartName"></a>
+                        <div class="element clickable method protected  method_getMainPartName" data-toggle="collapse" data-target=".method_getMainPartName .collapse">
+                            <h2>getMainPartName</h2>
+                            <pre>getMainPartName() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
                                                                             <h3>Response</h3>
                                         <code>string</code><p></p>
                                                                     </div>
@@ -937,6 +972,77 @@ make sure that output is correctly escaped. Otherwise you may get broken documen
                             </div>
 
                         </div>
+                                            <a id="method_transformSingleXml"></a>
+                        <div class="element clickable method protected  method_transformSingleXml" data-toggle="collapse" data-target=".method_transformSingleXml .collapse">
+                            <h2>transformSingleXml</h2>
+                            <pre>transformSingleXml(string $xml, \XSLTProcessor $xsltProcessor) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>\PhpOffice\PhpWord\Exception\Exception</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$xml</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$xsltProcessor</h4>
+                                                <code>\XSLTProcessor</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_transformXml"></a>
+                        <div class="element clickable method protected  method_transformXml" data-toggle="collapse" data-target=".method_transformXml .collapse">
+                            <h2>transformXml</h2>
+                            <pre>transformXml(mixed $xml, \XSLTProcessor $xsltProcessor) : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$xml</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$xsltProcessor</h4>
+                                                <code>\XSLTProcessor</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
                     
                                             <h3><i class="icon-custom icon-constant"></i> Constants</h3>
                                                     <a id="constant_MAXIMUM_REPLACEMENTS_DEFAULT"> </a>
@@ -1112,7 +1218,7 @@ make sure that output is correctly escaped. Otherwise you may get broken documen
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Fri, 08 Jul 2016 19:53:45 +0000.<br/>
+            generated on Sat, 30 Jul 2016 12:12:14 +0000.<br/>
     </footer>
     </body>
 </html>
