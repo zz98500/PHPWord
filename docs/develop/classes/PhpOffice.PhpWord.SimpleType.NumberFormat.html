@@ -1,0 +1,1929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    API Documentation &raquo; \PhpOffice\PhpWord\SimpleType\NumberFormat
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">API Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="../namespaces/PhpOffice.html">PhpOffice</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                                                                            <li class="method public inherited">
+        <a href="#method_validate" title="validate :: ">
+            <span class="description"></span><pre>validate</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_values" title="values :: ">
+            <span class="description"></span><pre>values</pre>
+        </a>
+    </li>
+
+                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                        </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                            <li class="method private inherited">
+                            <a href="#method_getConstants" title="getConstants :: ">
+                                <span class="description"></span><pre>getConstants</pre>
+                            </a>
+                        </li>
+                                                                                                                        </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                                <li class="constant ">
+                    <a href="#constant_AIUEO" title="AIUEO :: ">
+                        <span class="description"></span><pre>AIUEO</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_AIUEO_FULL_WIDTH" title="AIUEO_FULL_WIDTH :: ">
+                        <span class="description"></span><pre>AIUEO_FULL_WIDTH</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_ARABIC_ABJAD" title="ARABIC_ABJAD :: ">
+                        <span class="description"></span><pre>ARABIC_ABJAD</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_ARABIC_ALPHA" title="ARABIC_ALPHA :: ">
+                        <span class="description"></span><pre>ARABIC_ALPHA</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_BULLET" title="BULLET :: ">
+                        <span class="description"></span><pre>BULLET</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_CARDINAL_TEXT" title="CARDINAL_TEXT :: ">
+                        <span class="description"></span><pre>CARDINAL_TEXT</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_CHICAGO" title="CHICAGO :: ">
+                        <span class="description"></span><pre>CHICAGO</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_CHINESE_COUNTING" title="CHINESE_COUNTING :: ">
+                        <span class="description"></span><pre>CHINESE_COUNTING</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_CHINESE_COUNTING_THOUSAND" title="CHINESE_COUNTING_THOUSAND :: ">
+                        <span class="description"></span><pre>CHINESE_COUNTING_THOUSAND</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_CHINESE_LEGAL_SIMPLIFIED" title="CHINESE_LEGAL_SIMPLIFIED :: ">
+                        <span class="description"></span><pre>CHINESE_LEGAL_SIMPLIFIED</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_CHOSUNG" title="CHOSUNG :: ">
+                        <span class="description"></span><pre>CHOSUNG</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_DECIMAL" title="DECIMAL :: ">
+                        <span class="description"></span><pre>DECIMAL</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_DECIMAL_ENCLOSED_CIRCLE" title="DECIMAL_ENCLOSED_CIRCLE :: ">
+                        <span class="description"></span><pre>DECIMAL_ENCLOSED_CIRCLE</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_DECIMAL_ENCLOSED_CIRCLE_CHINESE" title="DECIMAL_ENCLOSED_CIRCLE_CHINESE :: ">
+                        <span class="description"></span><pre>DECIMAL_ENCLOSED_CIRCLE_CHINESE</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_DECIMAL_ENCLOSED_FULL_STOP" title="DECIMAL_ENCLOSED_FULL_STOP :: ">
+                        <span class="description"></span><pre>DECIMAL_ENCLOSED_FULL_STOP</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_DECIMAL_ENCLOSED_PAREN" title="DECIMAL_ENCLOSED_PAREN :: ">
+                        <span class="description"></span><pre>DECIMAL_ENCLOSED_PAREN</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_DECIMAL_FULL_WIDTH" title="DECIMAL_FULL_WIDTH :: ">
+                        <span class="description"></span><pre>DECIMAL_FULL_WIDTH</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_DECIMAL_FULL_WIDTH2" title="DECIMAL_FULL_WIDTH2 :: ">
+                        <span class="description"></span><pre>DECIMAL_FULL_WIDTH2</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_DECIMAL_HALF_WIDTH" title="DECIMAL_HALF_WIDTH :: ">
+                        <span class="description"></span><pre>DECIMAL_HALF_WIDTH</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_DECIMAL_ZERO" title="DECIMAL_ZERO :: ">
+                        <span class="description"></span><pre>DECIMAL_ZERO</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_GANADA" title="GANADA :: ">
+                        <span class="description"></span><pre>GANADA</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_HEBREW1" title="HEBREW1 :: ">
+                        <span class="description"></span><pre>HEBREW1</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_HEBREW2" title="HEBREW2 :: ">
+                        <span class="description"></span><pre>HEBREW2</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_HEX" title="HEX :: ">
+                        <span class="description"></span><pre>HEX</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_HINDI_CONSONANTS" title="HINDI_CONSONANTS :: ">
+                        <span class="description"></span><pre>HINDI_CONSONANTS</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_HINDI_COUNTING" title="HINDI_COUNTING :: ">
+                        <span class="description"></span><pre>HINDI_COUNTING</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_HINDI_NUMBERS" title="HINDI_NUMBERS :: ">
+                        <span class="description"></span><pre>HINDI_NUMBERS</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_HINDI_VOWELS" title="HINDI_VOWELS :: ">
+                        <span class="description"></span><pre>HINDI_VOWELS</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_IDEOGRAPH_DIGITAL" title="IDEOGRAPH_DIGITAL :: ">
+                        <span class="description"></span><pre>IDEOGRAPH_DIGITAL</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_IDEOGRAPH_LEGAL_TRADITIONAL" title="IDEOGRAPH_LEGAL_TRADITIONAL :: ">
+                        <span class="description"></span><pre>IDEOGRAPH_LEGAL_TRADITIONAL</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_IDEOGRAPH_TRADITIONAL" title="IDEOGRAPH_TRADITIONAL :: ">
+                        <span class="description"></span><pre>IDEOGRAPH_TRADITIONAL</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_IDEOGRAPH_ZODIAC" title="IDEOGRAPH_ZODIAC :: ">
+                        <span class="description"></span><pre>IDEOGRAPH_ZODIAC</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_IDEOGRAPH_ZODIAC_TRADITIONAL" title="IDEOGRAPH_ZODIAC_TRADITIONAL :: ">
+                        <span class="description"></span><pre>IDEOGRAPH_ZODIAC_TRADITIONAL</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_IDEOGRAPHENCLOSEDCIRCLE" title="IDEOGRAPHENCLOSEDCIRCLE :: ">
+                        <span class="description"></span><pre>IDEOGRAPHENCLOSEDCIRCLE</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_IROHA" title="IROHA :: ">
+                        <span class="description"></span><pre>IROHA</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_IROHA_FULL_WIDTH" title="IROHA_FULL_WIDTH :: ">
+                        <span class="description"></span><pre>IROHA_FULL_WIDTH</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_JAPANESE_COUNTING" title="JAPANESE_COUNTING :: ">
+                        <span class="description"></span><pre>JAPANESE_COUNTING</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_JAPANESE_DIGITAL_TEN_THOUSAND" title="JAPANESE_DIGITAL_TEN_THOUSAND :: ">
+                        <span class="description"></span><pre>JAPANESE_DIGITAL_TEN_THOUSAND</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_JAPANESE_LEGAL" title="JAPANESE_LEGAL :: ">
+                        <span class="description"></span><pre>JAPANESE_LEGAL</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_KOREAN_COUNTING" title="KOREAN_COUNTING :: ">
+                        <span class="description"></span><pre>KOREAN_COUNTING</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_KOREAN_DIGITAL" title="KOREAN_DIGITAL :: ">
+                        <span class="description"></span><pre>KOREAN_DIGITAL</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_KOREAN_DIGITAL2" title="KOREAN_DIGITAL2 :: ">
+                        <span class="description"></span><pre>KOREAN_DIGITAL2</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_KOREAN_LEGAL" title="KOREAN_LEGAL :: ">
+                        <span class="description"></span><pre>KOREAN_LEGAL</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_LOWER_LETTER" title="LOWER_LETTER :: ">
+                        <span class="description"></span><pre>LOWER_LETTER</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_LOWER_ROMAN" title="LOWER_ROMAN :: ">
+                        <span class="description"></span><pre>LOWER_ROMAN</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_NONE" title="NONE :: ">
+                        <span class="description"></span><pre>NONE</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_NUMBER_IN_DASH" title="NUMBER_IN_DASH :: ">
+                        <span class="description"></span><pre>NUMBER_IN_DASH</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_ORDINAL" title="ORDINAL :: ">
+                        <span class="description"></span><pre>ORDINAL</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_ORDINAL_TEXT" title="ORDINAL_TEXT :: ">
+                        <span class="description"></span><pre>ORDINAL_TEXT</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_RUSSIAN_LOWER" title="RUSSIAN_LOWER :: ">
+                        <span class="description"></span><pre>RUSSIAN_LOWER</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_RUSSIAN_UPPER" title="RUSSIAN_UPPER :: ">
+                        <span class="description"></span><pre>RUSSIAN_UPPER</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_TAIWANESE_COUNTING" title="TAIWANESE_COUNTING :: ">
+                        <span class="description"></span><pre>TAIWANESE_COUNTING</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_TAIWANESE_COUNTING_THOUSAND" title="TAIWANESE_COUNTING_THOUSAND :: ">
+                        <span class="description"></span><pre>TAIWANESE_COUNTING_THOUSAND</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_TAIWANESE_DIGITAL" title="TAIWANESE_DIGITAL :: ">
+                        <span class="description"></span><pre>TAIWANESE_DIGITAL</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_THAI_COUNTING" title="THAI_COUNTING :: ">
+                        <span class="description"></span><pre>THAI_COUNTING</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_THAI_LETTERS" title="THAI_LETTERS :: ">
+                        <span class="description"></span><pre>THAI_LETTERS</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_THAI_NUMBERS" title="THAI_NUMBERS :: ">
+                        <span class="description"></span><pre>THAI_NUMBERS</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_UPPER_LETTER" title="UPPER_LETTER :: ">
+                        <span class="description"></span><pre>UPPER_LETTER</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_UPPER_ROMAN" title="UPPER_ROMAN :: ">
+                        <span class="description"></span><pre>UPPER_ROMAN</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_VIETNAMESE_COUNTING" title="VIETNAMESE_COUNTING :: ">
+                        <span class="description"></span><pre>VIETNAMESE_COUNTING</pre>
+                    </a>
+                </li>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>NumberFormat</h1>
+                <small style="display: block; text-align: right">
+                                            Extends <a href="../classes/PhpOffice.PhpWord.Shared.AbstractEnum.html">\PhpOffice\PhpWord\Shared\AbstractEnum</a>
+                                                        </small>
+                <p class="short_description">Numbering Format.</p>
+                <div class="details">
+                    <div class="long_description">
+                        
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        since
+                                                                            </th>
+                                    <td>
+                                                                                    0.14.0
+                                                                                
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        see
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        codeCoverageIgnore
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Default</p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                                </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method_getConstants"></a>
+                        <div class="element clickable method private  method_getConstants inherited" data-toggle="collapse" data-target=".method_getConstants .collapse">
+                            <h2>getConstants</h2>
+                            <pre>getConstants() </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_validate"></a>
+                        <div class="element clickable method public  method_validate inherited" data-toggle="collapse" data-target=".method_validate .collapse">
+                            <h2>validate</h2>
+                            <pre>validate( $value) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_values"></a>
+                        <div class="element clickable method public  method_values inherited" data-toggle="collapse" data-target=".method_values .collapse">
+                            <h2>values</h2>
+                            <pre>values() </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                    
+                                            <h3><i class="icon-custom icon-constant"></i> Constants</h3>
+                                                    <a id="constant_DECIMAL"> </a>
+                            <div class="element clickable constant  constant_DECIMAL" data-toggle="collapse" data-target=".constant_DECIMAL .collapse">
+                                <h2>DECIMAL</h2>
+                                <pre>DECIMAL</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_UPPER_ROMAN"> </a>
+                            <div class="element clickable constant  constant_UPPER_ROMAN" data-toggle="collapse" data-target=".constant_UPPER_ROMAN .collapse">
+                                <h2>UPPER_ROMAN</h2>
+                                <pre>UPPER_ROMAN</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_LOWER_ROMAN"> </a>
+                            <div class="element clickable constant  constant_LOWER_ROMAN" data-toggle="collapse" data-target=".constant_LOWER_ROMAN .collapse">
+                                <h2>LOWER_ROMAN</h2>
+                                <pre>LOWER_ROMAN</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_UPPER_LETTER"> </a>
+                            <div class="element clickable constant  constant_UPPER_LETTER" data-toggle="collapse" data-target=".constant_UPPER_LETTER .collapse">
+                                <h2>UPPER_LETTER</h2>
+                                <pre>UPPER_LETTER</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_LOWER_LETTER"> </a>
+                            <div class="element clickable constant  constant_LOWER_LETTER" data-toggle="collapse" data-target=".constant_LOWER_LETTER .collapse">
+                                <h2>LOWER_LETTER</h2>
+                                <pre>LOWER_LETTER</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_ORDINAL"> </a>
+                            <div class="element clickable constant  constant_ORDINAL" data-toggle="collapse" data-target=".constant_ORDINAL .collapse">
+                                <h2>ORDINAL</h2>
+                                <pre>ORDINAL</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_CARDINAL_TEXT"> </a>
+                            <div class="element clickable constant  constant_CARDINAL_TEXT" data-toggle="collapse" data-target=".constant_CARDINAL_TEXT .collapse">
+                                <h2>CARDINAL_TEXT</h2>
+                                <pre>CARDINAL_TEXT</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_ORDINAL_TEXT"> </a>
+                            <div class="element clickable constant  constant_ORDINAL_TEXT" data-toggle="collapse" data-target=".constant_ORDINAL_TEXT .collapse">
+                                <h2>ORDINAL_TEXT</h2>
+                                <pre>ORDINAL_TEXT</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_HEX"> </a>
+                            <div class="element clickable constant  constant_HEX" data-toggle="collapse" data-target=".constant_HEX .collapse">
+                                <h2>HEX</h2>
+                                <pre>HEX</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_CHICAGO"> </a>
+                            <div class="element clickable constant  constant_CHICAGO" data-toggle="collapse" data-target=".constant_CHICAGO .collapse">
+                                <h2>CHICAGO</h2>
+                                <pre>CHICAGO</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_IDEOGRAPH_DIGITAL"> </a>
+                            <div class="element clickable constant  constant_IDEOGRAPH_DIGITAL" data-toggle="collapse" data-target=".constant_IDEOGRAPH_DIGITAL .collapse">
+                                <h2>IDEOGRAPH_DIGITAL</h2>
+                                <pre>IDEOGRAPH_DIGITAL</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_JAPANESE_COUNTING"> </a>
+                            <div class="element clickable constant  constant_JAPANESE_COUNTING" data-toggle="collapse" data-target=".constant_JAPANESE_COUNTING .collapse">
+                                <h2>JAPANESE_COUNTING</h2>
+                                <pre>JAPANESE_COUNTING</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_AIUEO"> </a>
+                            <div class="element clickable constant  constant_AIUEO" data-toggle="collapse" data-target=".constant_AIUEO .collapse">
+                                <h2>AIUEO</h2>
+                                <pre>AIUEO</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_IROHA"> </a>
+                            <div class="element clickable constant  constant_IROHA" data-toggle="collapse" data-target=".constant_IROHA .collapse">
+                                <h2>IROHA</h2>
+                                <pre>IROHA</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_DECIMAL_FULL_WIDTH"> </a>
+                            <div class="element clickable constant  constant_DECIMAL_FULL_WIDTH" data-toggle="collapse" data-target=".constant_DECIMAL_FULL_WIDTH .collapse">
+                                <h2>DECIMAL_FULL_WIDTH</h2>
+                                <pre>DECIMAL_FULL_WIDTH</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_DECIMAL_HALF_WIDTH"> </a>
+                            <div class="element clickable constant  constant_DECIMAL_HALF_WIDTH" data-toggle="collapse" data-target=".constant_DECIMAL_HALF_WIDTH .collapse">
+                                <h2>DECIMAL_HALF_WIDTH</h2>
+                                <pre>DECIMAL_HALF_WIDTH</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_JAPANESE_LEGAL"> </a>
+                            <div class="element clickable constant  constant_JAPANESE_LEGAL" data-toggle="collapse" data-target=".constant_JAPANESE_LEGAL .collapse">
+                                <h2>JAPANESE_LEGAL</h2>
+                                <pre>JAPANESE_LEGAL</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_JAPANESE_DIGITAL_TEN_THOUSAND"> </a>
+                            <div class="element clickable constant  constant_JAPANESE_DIGITAL_TEN_THOUSAND" data-toggle="collapse" data-target=".constant_JAPANESE_DIGITAL_TEN_THOUSAND .collapse">
+                                <h2>JAPANESE_DIGITAL_TEN_THOUSAND</h2>
+                                <pre>JAPANESE_DIGITAL_TEN_THOUSAND</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_DECIMAL_ENCLOSED_CIRCLE"> </a>
+                            <div class="element clickable constant  constant_DECIMAL_ENCLOSED_CIRCLE" data-toggle="collapse" data-target=".constant_DECIMAL_ENCLOSED_CIRCLE .collapse">
+                                <h2>DECIMAL_ENCLOSED_CIRCLE</h2>
+                                <pre>DECIMAL_ENCLOSED_CIRCLE</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_DECIMAL_FULL_WIDTH2"> </a>
+                            <div class="element clickable constant  constant_DECIMAL_FULL_WIDTH2" data-toggle="collapse" data-target=".constant_DECIMAL_FULL_WIDTH2 .collapse">
+                                <h2>DECIMAL_FULL_WIDTH2</h2>
+                                <pre>DECIMAL_FULL_WIDTH2</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_AIUEO_FULL_WIDTH"> </a>
+                            <div class="element clickable constant  constant_AIUEO_FULL_WIDTH" data-toggle="collapse" data-target=".constant_AIUEO_FULL_WIDTH .collapse">
+                                <h2>AIUEO_FULL_WIDTH</h2>
+                                <pre>AIUEO_FULL_WIDTH</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_IROHA_FULL_WIDTH"> </a>
+                            <div class="element clickable constant  constant_IROHA_FULL_WIDTH" data-toggle="collapse" data-target=".constant_IROHA_FULL_WIDTH .collapse">
+                                <h2>IROHA_FULL_WIDTH</h2>
+                                <pre>IROHA_FULL_WIDTH</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_DECIMAL_ZERO"> </a>
+                            <div class="element clickable constant  constant_DECIMAL_ZERO" data-toggle="collapse" data-target=".constant_DECIMAL_ZERO .collapse">
+                                <h2>DECIMAL_ZERO</h2>
+                                <pre>DECIMAL_ZERO</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_BULLET"> </a>
+                            <div class="element clickable constant  constant_BULLET" data-toggle="collapse" data-target=".constant_BULLET .collapse">
+                                <h2>BULLET</h2>
+                                <pre>BULLET</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_GANADA"> </a>
+                            <div class="element clickable constant  constant_GANADA" data-toggle="collapse" data-target=".constant_GANADA .collapse">
+                                <h2>GANADA</h2>
+                                <pre>GANADA</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_CHOSUNG"> </a>
+                            <div class="element clickable constant  constant_CHOSUNG" data-toggle="collapse" data-target=".constant_CHOSUNG .collapse">
+                                <h2>CHOSUNG</h2>
+                                <pre>CHOSUNG</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_DECIMAL_ENCLOSED_FULL_STOP"> </a>
+                            <div class="element clickable constant  constant_DECIMAL_ENCLOSED_FULL_STOP" data-toggle="collapse" data-target=".constant_DECIMAL_ENCLOSED_FULL_STOP .collapse">
+                                <h2>DECIMAL_ENCLOSED_FULL_STOP</h2>
+                                <pre>DECIMAL_ENCLOSED_FULL_STOP</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_DECIMAL_ENCLOSED_PAREN"> </a>
+                            <div class="element clickable constant  constant_DECIMAL_ENCLOSED_PAREN" data-toggle="collapse" data-target=".constant_DECIMAL_ENCLOSED_PAREN .collapse">
+                                <h2>DECIMAL_ENCLOSED_PAREN</h2>
+                                <pre>DECIMAL_ENCLOSED_PAREN</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_DECIMAL_ENCLOSED_CIRCLE_CHINESE"> </a>
+                            <div class="element clickable constant  constant_DECIMAL_ENCLOSED_CIRCLE_CHINESE" data-toggle="collapse" data-target=".constant_DECIMAL_ENCLOSED_CIRCLE_CHINESE .collapse">
+                                <h2>DECIMAL_ENCLOSED_CIRCLE_CHINESE</h2>
+                                <pre>DECIMAL_ENCLOSED_CIRCLE_CHINESE</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_IDEOGRAPHENCLOSEDCIRCLE"> </a>
+                            <div class="element clickable constant  constant_IDEOGRAPHENCLOSEDCIRCLE" data-toggle="collapse" data-target=".constant_IDEOGRAPHENCLOSEDCIRCLE .collapse">
+                                <h2>IDEOGRAPHENCLOSEDCIRCLE</h2>
+                                <pre>IDEOGRAPHENCLOSEDCIRCLE</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_IDEOGRAPH_TRADITIONAL"> </a>
+                            <div class="element clickable constant  constant_IDEOGRAPH_TRADITIONAL" data-toggle="collapse" data-target=".constant_IDEOGRAPH_TRADITIONAL .collapse">
+                                <h2>IDEOGRAPH_TRADITIONAL</h2>
+                                <pre>IDEOGRAPH_TRADITIONAL</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_IDEOGRAPH_ZODIAC"> </a>
+                            <div class="element clickable constant  constant_IDEOGRAPH_ZODIAC" data-toggle="collapse" data-target=".constant_IDEOGRAPH_ZODIAC .collapse">
+                                <h2>IDEOGRAPH_ZODIAC</h2>
+                                <pre>IDEOGRAPH_ZODIAC</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_IDEOGRAPH_ZODIAC_TRADITIONAL"> </a>
+                            <div class="element clickable constant  constant_IDEOGRAPH_ZODIAC_TRADITIONAL" data-toggle="collapse" data-target=".constant_IDEOGRAPH_ZODIAC_TRADITIONAL .collapse">
+                                <h2>IDEOGRAPH_ZODIAC_TRADITIONAL</h2>
+                                <pre>IDEOGRAPH_ZODIAC_TRADITIONAL</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_TAIWANESE_COUNTING"> </a>
+                            <div class="element clickable constant  constant_TAIWANESE_COUNTING" data-toggle="collapse" data-target=".constant_TAIWANESE_COUNTING .collapse">
+                                <h2>TAIWANESE_COUNTING</h2>
+                                <pre>TAIWANESE_COUNTING</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_IDEOGRAPH_LEGAL_TRADITIONAL"> </a>
+                            <div class="element clickable constant  constant_IDEOGRAPH_LEGAL_TRADITIONAL" data-toggle="collapse" data-target=".constant_IDEOGRAPH_LEGAL_TRADITIONAL .collapse">
+                                <h2>IDEOGRAPH_LEGAL_TRADITIONAL</h2>
+                                <pre>IDEOGRAPH_LEGAL_TRADITIONAL</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_TAIWANESE_COUNTING_THOUSAND"> </a>
+                            <div class="element clickable constant  constant_TAIWANESE_COUNTING_THOUSAND" data-toggle="collapse" data-target=".constant_TAIWANESE_COUNTING_THOUSAND .collapse">
+                                <h2>TAIWANESE_COUNTING_THOUSAND</h2>
+                                <pre>TAIWANESE_COUNTING_THOUSAND</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_TAIWANESE_DIGITAL"> </a>
+                            <div class="element clickable constant  constant_TAIWANESE_DIGITAL" data-toggle="collapse" data-target=".constant_TAIWANESE_DIGITAL .collapse">
+                                <h2>TAIWANESE_DIGITAL</h2>
+                                <pre>TAIWANESE_DIGITAL</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_CHINESE_COUNTING"> </a>
+                            <div class="element clickable constant  constant_CHINESE_COUNTING" data-toggle="collapse" data-target=".constant_CHINESE_COUNTING .collapse">
+                                <h2>CHINESE_COUNTING</h2>
+                                <pre>CHINESE_COUNTING</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_CHINESE_LEGAL_SIMPLIFIED"> </a>
+                            <div class="element clickable constant  constant_CHINESE_LEGAL_SIMPLIFIED" data-toggle="collapse" data-target=".constant_CHINESE_LEGAL_SIMPLIFIED .collapse">
+                                <h2>CHINESE_LEGAL_SIMPLIFIED</h2>
+                                <pre>CHINESE_LEGAL_SIMPLIFIED</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_CHINESE_COUNTING_THOUSAND"> </a>
+                            <div class="element clickable constant  constant_CHINESE_COUNTING_THOUSAND" data-toggle="collapse" data-target=".constant_CHINESE_COUNTING_THOUSAND .collapse">
+                                <h2>CHINESE_COUNTING_THOUSAND</h2>
+                                <pre>CHINESE_COUNTING_THOUSAND</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_KOREAN_DIGITAL"> </a>
+                            <div class="element clickable constant  constant_KOREAN_DIGITAL" data-toggle="collapse" data-target=".constant_KOREAN_DIGITAL .collapse">
+                                <h2>KOREAN_DIGITAL</h2>
+                                <pre>KOREAN_DIGITAL</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_KOREAN_COUNTING"> </a>
+                            <div class="element clickable constant  constant_KOREAN_COUNTING" data-toggle="collapse" data-target=".constant_KOREAN_COUNTING .collapse">
+                                <h2>KOREAN_COUNTING</h2>
+                                <pre>KOREAN_COUNTING</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_KOREAN_LEGAL"> </a>
+                            <div class="element clickable constant  constant_KOREAN_LEGAL" data-toggle="collapse" data-target=".constant_KOREAN_LEGAL .collapse">
+                                <h2>KOREAN_LEGAL</h2>
+                                <pre>KOREAN_LEGAL</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_KOREAN_DIGITAL2"> </a>
+                            <div class="element clickable constant  constant_KOREAN_DIGITAL2" data-toggle="collapse" data-target=".constant_KOREAN_DIGITAL2 .collapse">
+                                <h2>KOREAN_DIGITAL2</h2>
+                                <pre>KOREAN_DIGITAL2</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_VIETNAMESE_COUNTING"> </a>
+                            <div class="element clickable constant  constant_VIETNAMESE_COUNTING" data-toggle="collapse" data-target=".constant_VIETNAMESE_COUNTING .collapse">
+                                <h2>VIETNAMESE_COUNTING</h2>
+                                <pre>VIETNAMESE_COUNTING</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_RUSSIAN_LOWER"> </a>
+                            <div class="element clickable constant  constant_RUSSIAN_LOWER" data-toggle="collapse" data-target=".constant_RUSSIAN_LOWER .collapse">
+                                <h2>RUSSIAN_LOWER</h2>
+                                <pre>RUSSIAN_LOWER</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_RUSSIAN_UPPER"> </a>
+                            <div class="element clickable constant  constant_RUSSIAN_UPPER" data-toggle="collapse" data-target=".constant_RUSSIAN_UPPER .collapse">
+                                <h2>RUSSIAN_UPPER</h2>
+                                <pre>RUSSIAN_UPPER</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_NONE"> </a>
+                            <div class="element clickable constant  constant_NONE" data-toggle="collapse" data-target=".constant_NONE .collapse">
+                                <h2>NONE</h2>
+                                <pre>NONE</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_NUMBER_IN_DASH"> </a>
+                            <div class="element clickable constant  constant_NUMBER_IN_DASH" data-toggle="collapse" data-target=".constant_NUMBER_IN_DASH .collapse">
+                                <h2>NUMBER_IN_DASH</h2>
+                                <pre>NUMBER_IN_DASH</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_HEBREW1"> </a>
+                            <div class="element clickable constant  constant_HEBREW1" data-toggle="collapse" data-target=".constant_HEBREW1 .collapse">
+                                <h2>HEBREW1</h2>
+                                <pre>HEBREW1</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_HEBREW2"> </a>
+                            <div class="element clickable constant  constant_HEBREW2" data-toggle="collapse" data-target=".constant_HEBREW2 .collapse">
+                                <h2>HEBREW2</h2>
+                                <pre>HEBREW2</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_ARABIC_ALPHA"> </a>
+                            <div class="element clickable constant  constant_ARABIC_ALPHA" data-toggle="collapse" data-target=".constant_ARABIC_ALPHA .collapse">
+                                <h2>ARABIC_ALPHA</h2>
+                                <pre>ARABIC_ALPHA</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_ARABIC_ABJAD"> </a>
+                            <div class="element clickable constant  constant_ARABIC_ABJAD" data-toggle="collapse" data-target=".constant_ARABIC_ABJAD .collapse">
+                                <h2>ARABIC_ABJAD</h2>
+                                <pre>ARABIC_ABJAD</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_HINDI_VOWELS"> </a>
+                            <div class="element clickable constant  constant_HINDI_VOWELS" data-toggle="collapse" data-target=".constant_HINDI_VOWELS .collapse">
+                                <h2>HINDI_VOWELS</h2>
+                                <pre>HINDI_VOWELS</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_HINDI_CONSONANTS"> </a>
+                            <div class="element clickable constant  constant_HINDI_CONSONANTS" data-toggle="collapse" data-target=".constant_HINDI_CONSONANTS .collapse">
+                                <h2>HINDI_CONSONANTS</h2>
+                                <pre>HINDI_CONSONANTS</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_HINDI_NUMBERS"> </a>
+                            <div class="element clickable constant  constant_HINDI_NUMBERS" data-toggle="collapse" data-target=".constant_HINDI_NUMBERS .collapse">
+                                <h2>HINDI_NUMBERS</h2>
+                                <pre>HINDI_NUMBERS</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_HINDI_COUNTING"> </a>
+                            <div class="element clickable constant  constant_HINDI_COUNTING" data-toggle="collapse" data-target=".constant_HINDI_COUNTING .collapse">
+                                <h2>HINDI_COUNTING</h2>
+                                <pre>HINDI_COUNTING</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_THAI_LETTERS"> </a>
+                            <div class="element clickable constant  constant_THAI_LETTERS" data-toggle="collapse" data-target=".constant_THAI_LETTERS .collapse">
+                                <h2>THAI_LETTERS</h2>
+                                <pre>THAI_LETTERS</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_THAI_NUMBERS"> </a>
+                            <div class="element clickable constant  constant_THAI_NUMBERS" data-toggle="collapse" data-target=".constant_THAI_NUMBERS .collapse">
+                                <h2>THAI_NUMBERS</h2>
+                                <pre>THAI_NUMBERS</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_THAI_COUNTING"> </a>
+                            <div class="element clickable constant  constant_THAI_COUNTING" data-toggle="collapse" data-target=".constant_THAI_COUNTING .collapse">
+                                <h2>THAI_COUNTING</h2>
+                                <pre>THAI_COUNTING</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                            
+                                                                <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_constCacheArray"> </a>
+                            <div class="element clickable property  private property_constCacheArray inherited" data-toggle="collapse" data-target=".property_constCacheArray .collapse">
+                                <h2>constCacheArray</h2>
+                                <pre>constCacheArray : </pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                    <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\PhpOffice\PhpWord\SimpleType\NumberFormat"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/PhpOffice.PhpWord.SimpleType.html">SimpleType</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/PhpOffice.PhpWord.SimpleType.NumberFormat.html">NumberFormat</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Tue, 04 Jul 2017 13:38:57 +0000.<br/>
+    </footer>
+    </body>
+</html>
