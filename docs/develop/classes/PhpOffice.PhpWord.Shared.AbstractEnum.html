@@ -120,14 +120,20 @@
             <i class="icon-custom icon-method"></i> Methods
             <ul>
                                                                                                                                                             <li class="method public">
-        <a href="#method_validate" title="validate :: ">
-            <span class="description"></span><pre>validate</pre>
+        <a href="#method_isValid" title="isValid :: Returns true the value is valid for this enum">
+            <span class="description">Returns true the value is valid for this enum</span><pre>isValid</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_values" title="values :: ">
-            <span class="description"></span><pre>values</pre>
+        <a href="#method_validate" title="validate :: Validates that the value passed is a valid value">
+            <span class="description">Validates that the value passed is a valid value</span><pre>validate</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_values" title="values :: Returns all values for this enum">
+            <span class="description">Returns all values for this enum</span><pre>values</pre>
         </a>
     </li>
 
@@ -135,7 +141,7 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                        </ul>
+                                                                                                                                                                                            </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
@@ -144,7 +150,7 @@
                                 <span class="description"></span><pre>getConstants</pre>
                             </a>
                         </li>
-                                                                                                                        </ul>
+                                                                                                                                                            </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -213,10 +219,37 @@
                             </div>
 
                         </div>
+                                            <a id="method_isValid"></a>
+                        <div class="element clickable method public  method_isValid" data-toggle="collapse" data-target=".method_isValid .collapse">
+                            <h2>Returns true the value is valid for this enum</h2>
+                            <pre>isValid(\PhpOffice\PhpWord\Shared\strign $value) : boolean</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>\PhpOffice\PhpWord\Shared\strign</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p><p>true if value is valid</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_validate"></a>
                         <div class="element clickable method public  method_validate" data-toggle="collapse" data-target=".method_validate .collapse">
-                            <h2>validate</h2>
-                            <pre>validate( $value) </pre>
+                            <h2>Validates that the value passed is a valid value</h2>
+                            <pre>validate(string $value) </pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -233,19 +266,21 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
                                                 <td>
-                                                                                                    </td>
+                                                    <dl>
+                                                                                                            <dt>\InvalidArgumentException</dt>
+                                                        <dd><p>if the value passed is not valid for this enum</p></dd>
+                                                                                                                                                            </dl>
+                                                </td>
                                             </tr>
-                                                                                                                    </table>
+                                                                            </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$value</h4>
-                                                <code></code><p></p>
+                                                <code>string</code><p></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -254,8 +289,8 @@
                         </div>
                                             <a id="method_values"></a>
                         <div class="element clickable method public  method_values" data-toggle="collapse" data-target=".method_values .collapse">
-                            <h2>values</h2>
-                            <pre>values() </pre>
+                            <h2>Returns all values for this enum</h2>
+                            <pre>values() : array</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -265,13 +300,6 @@
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                     <tr>
                                                 <th>
                                                     
@@ -282,6 +310,8 @@
                                                                                                                     </table>
 
                                     
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
                                                                     </div>
                             </div>
 
@@ -334,7 +364,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Tue, 11 Jul 2017 00:15:59 +0000.<br/>
+            generated on Fri, 21 Jul 2017 22:16:51 +0000.<br/>
     </footer>
     </body>
 </html>
