@@ -156,7 +156,7 @@
      </tr>
 
      <tr>
-      <td class="success" colspan="4">&nbsp;<a href="#307">getInt4d($data, $pos)</a></td>
+      <td class="success" colspan="4">&nbsp;<a href="#306">getInt4d($data, $pos)</a></td>
       <td class="success big">       <div class="progress progress-success" style="width: 100px;">
         <div class="bar" style="width: 100.00%;"></div>
        </div>
@@ -473,31 +473,30 @@
      <tr><td><div align="right"><a name="294"></a><a href="#294">294</a></div></td><td class="codeLine"></td></tr>
      <tr class="success popin" data-title="1 test covers line 295" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Reader\MsDocTest::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="295"></a><a href="#295">295</a></div></td><td class="codeLine">            $offset += self::PROPERTY_STORAGE_BLOCK_SIZE;</td></tr>
      <tr class="success popin" data-title="1 test covers line 296" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Reader\MsDocTest::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="296"></a><a href="#296">296</a></div></td><td class="codeLine">        }</td></tr>
-     <tr><td><div align="right"><a name="297"></a><a href="#297">297</a></div></td><td class="codeLine"></td></tr>
-     <tr class="success popin" data-title="1 test covers line 298" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Reader\MsDocTest::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="298"></a><a href="#298">298</a></div></td><td class="codeLine">    }</td></tr>
-     <tr><td><div align="right"><a name="299"></a><a href="#299">299</a></div></td><td class="codeLine"></td></tr>
-     <tr><td><div align="right"><a name="300"></a><a href="#300">300</a></div></td><td class="codeLine">    /**</td></tr>
-     <tr><td><div align="right"><a name="301"></a><a href="#301">301</a></div></td><td class="codeLine">     * Read 4 bytes of data at specified position</td></tr>
-     <tr><td><div align="right"><a name="302"></a><a href="#302">302</a></div></td><td class="codeLine">     *</td></tr>
-     <tr><td><div align="right"><a name="303"></a><a href="#303">303</a></div></td><td class="codeLine">     * @param string $data</td></tr>
-     <tr><td><div align="right"><a name="304"></a><a href="#304">304</a></div></td><td class="codeLine">     * @param int $pos</td></tr>
-     <tr><td><div align="right"><a name="305"></a><a href="#305">305</a></div></td><td class="codeLine">     * @return int</td></tr>
-     <tr><td><div align="right"><a name="306"></a><a href="#306">306</a></div></td><td class="codeLine">     */</td></tr>
-     <tr><td><div align="right"><a name="307"></a><a href="#307">307</a></div></td><td class="codeLine">    private static function getInt4d($data, $pos)</td></tr>
-     <tr><td><div align="right"><a name="308"></a><a href="#308">308</a></div></td><td class="codeLine">    {</td></tr>
-     <tr><td><div align="right"><a name="309"></a><a href="#309">309</a></div></td><td class="codeLine">        // FIX: represent numbers correctly on 64-bit system</td></tr>
-     <tr><td><div align="right"><a name="310"></a><a href="#310">310</a></div></td><td class="codeLine">        // http://sourceforge.net/tracker/index.php?func=detail&amp;aid=1487372&amp;group_id=99160&amp;atid=623334</td></tr>
-     <tr><td><div align="right"><a name="311"></a><a href="#311">311</a></div></td><td class="codeLine">        // Hacked by Andreas Rehm 2006 to ensure correct result of the &lt;&lt;24 block on 32 and 64bit systems</td></tr>
-     <tr class="success popin" data-title="1 test covers line 312" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Reader\MsDocTest::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="312"></a><a href="#312">312</a></div></td><td class="codeLine">        $or24 = ord($data[$pos + 3]);</td></tr>
-     <tr class="success popin" data-title="1 test covers line 313" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Reader\MsDocTest::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="313"></a><a href="#313">313</a></div></td><td class="codeLine">        if ($or24 &gt;= 128) {</td></tr>
-     <tr><td><div align="right"><a name="314"></a><a href="#314">314</a></div></td><td class="codeLine">            // negative number</td></tr>
-     <tr class="success popin" data-title="1 test covers line 315" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Reader\MsDocTest::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="315"></a><a href="#315">315</a></div></td><td class="codeLine">            $ord24 = -abs((256 - $or24) &lt;&lt; 24);</td></tr>
-     <tr class="success popin" data-title="1 test covers line 316" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Reader\MsDocTest::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="316"></a><a href="#316">316</a></div></td><td class="codeLine">        } else {</td></tr>
-     <tr class="success popin" data-title="1 test covers line 317" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Reader\MsDocTest::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="317"></a><a href="#317">317</a></div></td><td class="codeLine">            $ord24 = ($or24 &amp; 127) &lt;&lt; 24;</td></tr>
-     <tr><td><div align="right"><a name="318"></a><a href="#318">318</a></div></td><td class="codeLine">        }</td></tr>
-     <tr class="success popin" data-title="1 test covers line 319" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Reader\MsDocTest::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="319"></a><a href="#319">319</a></div></td><td class="codeLine">        return ord($data[$pos]) | (ord($data[$pos + 1]) &lt;&lt; 8) | (ord($data[$pos + 2]) &lt;&lt; 16) | $ord24;</td></tr>
-     <tr class="warning"><td><div align="right"><a name="320"></a><a href="#320">320</a></div></td><td class="codeLine">    }</td></tr>
-     <tr><td><div align="right"><a name="321"></a><a href="#321">321</a></div></td><td class="codeLine">}</td></tr>
+     <tr class="success popin" data-title="1 test covers line 297" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Reader\MsDocTest::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="297"></a><a href="#297">297</a></div></td><td class="codeLine">    }</td></tr>
+     <tr><td><div align="right"><a name="298"></a><a href="#298">298</a></div></td><td class="codeLine"></td></tr>
+     <tr><td><div align="right"><a name="299"></a><a href="#299">299</a></div></td><td class="codeLine">    /**</td></tr>
+     <tr><td><div align="right"><a name="300"></a><a href="#300">300</a></div></td><td class="codeLine">     * Read 4 bytes of data at specified position</td></tr>
+     <tr><td><div align="right"><a name="301"></a><a href="#301">301</a></div></td><td class="codeLine">     *</td></tr>
+     <tr><td><div align="right"><a name="302"></a><a href="#302">302</a></div></td><td class="codeLine">     * @param string $data</td></tr>
+     <tr><td><div align="right"><a name="303"></a><a href="#303">303</a></div></td><td class="codeLine">     * @param int $pos</td></tr>
+     <tr><td><div align="right"><a name="304"></a><a href="#304">304</a></div></td><td class="codeLine">     * @return int</td></tr>
+     <tr><td><div align="right"><a name="305"></a><a href="#305">305</a></div></td><td class="codeLine">     */</td></tr>
+     <tr><td><div align="right"><a name="306"></a><a href="#306">306</a></div></td><td class="codeLine">    private static function getInt4d($data, $pos)</td></tr>
+     <tr><td><div align="right"><a name="307"></a><a href="#307">307</a></div></td><td class="codeLine">    {</td></tr>
+     <tr><td><div align="right"><a name="308"></a><a href="#308">308</a></div></td><td class="codeLine">        // FIX: represent numbers correctly on 64-bit system</td></tr>
+     <tr><td><div align="right"><a name="309"></a><a href="#309">309</a></div></td><td class="codeLine">        // http://sourceforge.net/tracker/index.php?func=detail&amp;aid=1487372&amp;group_id=99160&amp;atid=623334</td></tr>
+     <tr><td><div align="right"><a name="310"></a><a href="#310">310</a></div></td><td class="codeLine">        // Hacked by Andreas Rehm 2006 to ensure correct result of the &lt;&lt;24 block on 32 and 64bit systems</td></tr>
+     <tr class="success popin" data-title="1 test covers line 311" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Reader\MsDocTest::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="311"></a><a href="#311">311</a></div></td><td class="codeLine">        $or24 = ord($data[$pos + 3]);</td></tr>
+     <tr class="success popin" data-title="1 test covers line 312" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Reader\MsDocTest::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="312"></a><a href="#312">312</a></div></td><td class="codeLine">        if ($or24 &gt;= 128) {</td></tr>
+     <tr><td><div align="right"><a name="313"></a><a href="#313">313</a></div></td><td class="codeLine">            // negative number</td></tr>
+     <tr class="success popin" data-title="1 test covers line 314" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Reader\MsDocTest::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="314"></a><a href="#314">314</a></div></td><td class="codeLine">            $ord24 = -abs((256 - $or24) &lt;&lt; 24);</td></tr>
+     <tr class="success popin" data-title="1 test covers line 315" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Reader\MsDocTest::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="315"></a><a href="#315">315</a></div></td><td class="codeLine">        } else {</td></tr>
+     <tr class="success popin" data-title="1 test covers line 316" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Reader\MsDocTest::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="316"></a><a href="#316">316</a></div></td><td class="codeLine">            $ord24 = ($or24 &amp; 127) &lt;&lt; 24;</td></tr>
+     <tr><td><div align="right"><a name="317"></a><a href="#317">317</a></div></td><td class="codeLine">        }</td></tr>
+     <tr class="success popin" data-title="1 test covers line 318" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Reader\MsDocTest::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="318"></a><a href="#318">318</a></div></td><td class="codeLine">        return ord($data[$pos]) | (ord($data[$pos + 1]) &lt;&lt; 8) | (ord($data[$pos + 2]) &lt;&lt; 16) | $ord24;</td></tr>
+     <tr class="warning"><td><div align="right"><a name="319"></a><a href="#319">319</a></div></td><td class="codeLine">    }</td></tr>
+     <tr><td><div align="right"><a name="320"></a><a href="#320">320</a></div></td><td class="codeLine">}</td></tr>
 
     </tbody>
    </table>
@@ -509,7 +508,7 @@
      <span class="warning"><strong>Dead Code</strong></span>
     </p>
     <p>
-     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.18</a> using <a href="http://www.php.net/" target="_top">PHP 5.5.38</a> and <a href="http://phpunit.de/">PHPUnit 3.7.38</a> at Mon Sep 11 20:56:39 UTC 2017.</small>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.18</a> using <a href="http://www.php.net/" target="_top">PHP 5.5.38</a> and <a href="http://phpunit.de/">PHPUnit 3.7.38</a> at Sun Sep 17 19:48:23 UTC 2017.</small>
     </p>
    </footer>
   </div>
