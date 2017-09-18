@@ -198,6 +198,12 @@
     </li>
 
                                                                                                         <li class="method public">
+        <a href="#method_getText" title="getText :: Get Field text">
+            <span class="description">Get Field text</span><pre>getText</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
         <a href="#method_getType" title="getType :: Get Field type">
             <span class="description">Get Field type</span><pre>getType</pre>
         </a>
@@ -270,6 +276,12 @@
     </li>
 
                                                                                                         <li class="method public">
+        <a href="#method_setText" title="setText :: Set Field text">
+            <span class="description">Set Field text</span><pre>setText</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
         <a href="#method_setType" title="setType :: Set Field type">
             <span class="description">Set Field type</span><pre>setType</pre>
         </a>
@@ -279,7 +291,7 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method protected inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method protected inherited">
                             <a href="#method_setEnumVal" title="setEnumVal :: Set enum value">
                                 <span class="description">Set enum value</span><pre>setEnumVal</pre>
                             </a>
@@ -289,7 +301,7 @@
                                 <span class="description">Set new style value</span><pre>setNewStyle</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                        </ul>
+                                                                                                                                                                                                                                                                                                            </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
@@ -298,7 +310,7 @@
                                 <span class="description">Return media element (image, object, link) container name</span><pre>getMediaPart</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                <li class="method private inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method private inherited">
                             <a href="#method_setCollectionRelation" title="setCollectionRelation :: Set relation Id for elements that will be registered in the Collection subnamespaces.">
                                 <span class="description">Set relation Id for elements that will be registered in the Collection subnamespaces.</span><pre>setCollectionRelation</pre>
                             </a>
@@ -308,7 +320,7 @@
                                 <span class="description">Set relation Id for media elements (link, image, object; legacy of OOXML)</span><pre>setMediaRelation</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                            </ul>
+                                                                                                                                                                                                                                                                                                                                                </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -365,7 +377,7 @@
                                                                 <a id="method___construct"></a>
                         <div class="element clickable method public  method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
                             <h2>Create a new Field Element</h2>
-                            <pre>__construct(string $type = null, array $properties = array(), array $options = array()) </pre>
+                            <pre>__construct(string $type = null, array $properties = array(), array $options = array(),  $text = null) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -396,6 +408,10 @@
                                                                                     <div class="subelement argument">
                                                 <h4>$options</h4>
                                                 <code>array</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$text</h4>
+                                                <code></code><p></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -775,6 +791,35 @@
                                     
                                                                             <h3>Response</h3>
                                         <code>integer</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getText"></a>
+                        <div class="element clickable method public  method_getText" data-toggle="collapse" data-target=".method_getText .collapse">
+                            <h2>Get Field text</h2>
+                            <pre>getText() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>| TextRun</p></p>
                                                                     </div>
                             </div>
 
@@ -1267,6 +1312,42 @@
                             </div>
 
                         </div>
+                                            <a id="method_setText"></a>
+                        <div class="element clickable method public  method_setText" data-toggle="collapse" data-target=".method_setText .collapse">
+                            <h2>Set Field text</h2>
+                            <pre>setText( $text) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>\InvalidArgumentException</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$text</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>| TextRun</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_setType"></a>
                         <div class="element clickable method public  method_setType" data-toggle="collapse" data-target=".method_setType .collapse">
                             <h2>Set Field type</h2>
@@ -1356,6 +1437,32 @@ and options</h2>
 
                                                                                     <h3>Type(s)</h3>
                                             <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_text"> </a>
+                            <div class="element clickable property  protected property_text" data-toggle="collapse" data-target=".property_text .collapse">
+                                <h2>Field text</h2>
+                                <pre>text : \PhpOffice\PhpWord\Element\TextRun</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p>| string</p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code><a href="../classes/PhpOffice.PhpWord.Element.TextRun.html">\PhpOffice\PhpWord\Element\TextRun</a></code>
                                                                             </div>
                                 </div>
                             </div>
@@ -1773,7 +1880,7 @@ AUTO, FIRST, and EVEN (AUTO = ODD)</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Sun, 17 Sep 2017 19:51:03 +0000.<br/>
+            generated on Mon, 18 Sep 2017 19:58:49 +0000.<br/>
     </footer>
     </body>
 </html>
